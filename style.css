@@ -1,0 +1,343 @@
+body{
+    background: rgb(247, 247, 247);
+    
+}
+section{
+    padding: 2rem 9%;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    -ms-scroll-chaining: 6.5rem;
+}
+html::-webkit-scrollbar{
+    width: 10px;
+}
+html::-webkit-scrollbar-thumb{
+    background: var(--main);
+}
+html::-webkit-scrollbar-track{
+    background: #000;
+}
+
+:root{
+    --main: #cf0202;
+}
+.btn{
+    display: inline-block; 
+    margin-top: 1rem;
+    background: var(--main);
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.7rem;
+    text-align: center;
+    padding: 0.8rem 3rem;
+}
+.btn:hover{
+    letter-spacing: 0.2rem;
+    background: #2c2c54;
+}
+*{
+    font-family: "Besley",serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none; 
+    transition: 0.2s all linear;
+}
+*::selection{
+    background: var(--main);
+    color: #000;
+}
+.heading{
+    color: #2c2c54;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    padding: 1rem;
+    padding-bottom: 2rem;
+}
+.heading span{
+    text-transform: uppercase;
+    color: var(--main);
+}
+/*Header selection start*/
+.header{
+    background: rgb(9, 7, 138);
+    padding: 2rem 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .logo{
+color: #ffff;
+font-size: 3rem;
+ font-weight: 700;
+}
+.header .logo:hover{
+    color: red;
+}
+.header .logo i{
+    padding-right: 0.5rem;
+    color: var(--main);
+}
+.header .SearchBox{
+height: 5rem;
+display: flex;
+
+}
+.header #Search{
+    height: 100%;
+    width: 100%;
+    font-size: 1rem;
+    color: #333;
+    padding: 1rem; 
+    border: 0.1rem solid rgb(0,0,0,0.2);
+    text-transform: none;
+}
+.header .SearchBox label{
+    font-size: 2.5rem;
+    color: #fff;
+    height: 100%;
+    width: 8rem;
+    line-height: 5rem;
+    background: var(--main);
+    text-align: center; 
+    cursor: pointer;
+}
+.MainHeader{
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 9%;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+.MainHeader .navbar.active{
+    display: initial;
+}
+.MainHeader .navbar a{
+    font-size: 2rem;
+    padding: 0.5rem;
+    color: black;
+    border-radius: 0.5rem;
+}
+.MainHeader .navbar a:hover{
+    background: var(--main);
+    color: #fff;
+}
+#MenuBtn{
+    font-size: 3rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    color: #2c2c2c54;
+    border: 0.1rem solid #2c2c2c54;
+    padding: 0.8rem 1.5rem;
+    display: none;
+}
+.MainHeader .icons i{
+    color: #2c2c2c54;
+    font-size: 2.5rem;
+    padding-left: 1rem;
+}
+.MainHeader .icons i:hover{
+    color: var(--main);
+    cursor: pointer;
+}
+/*Header selection end*/
+
+/*Home selection start*/
+  .home{
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-wrap: wrap;
+  }
+  .home .content{
+      flex: 1 1 40rem;
+  }
+  .home .content span{
+       color:black;
+       font-size: 3rem;
+  }
+  .home .content h3{
+      font-size: 5rem;
+      color: #2c2c54;
+  }
+  .home .img{
+      flex: 1 1 40rem;
+      padding-top: 5rem;
+  }
+  .home .img img{
+      width: 60%
+  }
+  /*Home selection end*/
+
+  <!--Products section start-->
+.products{
+    margin-bottom: 200px;
+}
+.products .boxContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.products .boxContainer .box{
+    flex: 1 1 30rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.8);
+    position: relative;
+    overflow: hidden;
+    border: 0.1rem solid rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    text-align: center;
+    border-radius: 0.5rem;
+}
+.products .boxContainer .box img{
+    height: 20rem;
+}
+.products .box .Dis{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background: var(--main);
+    padding: 0.7rem 1rem;
+    font-size: 2rem;
+    color: #fff;
+}
+.products .box .icons{
+    position: absolute;
+    top: 0.5rem;
+    right: -6rem;
+}
+.products .box:hover .icons{
+    right: 1rem;
+
+}
+.products .boxContainer .box .icons i{
+    display: block;
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    font-size: 1.7rem;
+    background: rgba(0, 0, 0, 0.06);
+    color: #2c2c2c54;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: 0.7rem;
+}
+.products .boxContainer .box .icons 
+i:hover{
+    color: #fff;
+    background: var(--main);
+}
+.products .box h3{
+    font-size: 2.5rem;
+    color: #2c2c2c54;
+}
+.products .box .stars i{
+    font-size: 1.7rem;
+    padding: 1rem 0.1rem;
+    color: rgba(223, 223, 31, 0.921);
+}
+ .products .box .price{
+     font-size: 2rem;
+     color: 0.5rem 0;
+}
+.products .box .price span{
+    text-decoration: line-through;
+    font-size: 1.5rem;
+    color: #999;
+}
+.products .box .quality{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+.products .box .quality span{
+    font-size: 1.7rem;
+    padding: 0 0.7rem;
+}
+.products .box .quality input{
+    padding: 0.5rem;
+    color: #2c2c2c54;
+    background: rgba(0, 0, 0, 0.06);
+    font-weight: 700;
+    font-size: 1.5rem;
+    border: 0.1rem solid rgba(0, 0, 0, 0.2);
+}
+
+
+  <!--Products section end-->
+
+
+
+
+
+  /* Media Query */
+  @media (max-width: 1200px){
+      html{
+          font-size: 55%;
+      }
+    }
+
+  @media(max-width: 991px){
+      section{
+          padding: 2rem;
+      }
+      .header, 
+      .MainHeader{
+           padding: 2rem;
+      }
+  }
+
+
+  @media(max-width:760px){
+      #MenuBtn{
+          display: initial;
+      }
+      .MainHeader .navbar{
+          position: absolute;
+          top: 100%;
+          left: 0;
+          right: 0;
+          background: #2c2c2c54;
+          padding: 1rem 2rem;
+          display: none;
+      }
+      .MainHeader .navbar a{
+          display: block;
+          font-size: 2.5rem;
+          text-align: center;
+          background: #fff;
+          margin: 1.5rem 0;
+          padding: 0;
+      }
+      .home .content{
+          text-align: center;
+      }
+      .home .content h3{
+          font-size: 3rem;
+      }
+  }
+@media(max-width:460px){
+    html{
+        font-size: 50%;
+    }
+    .header{
+        flex-flow: column;
+    }
+    .header .logo{
+        font-size: 3rem; 
+    }
+    .header .SearchBox{
+        width: 100%;
+        margin-top: 2rem;
+    }
+} 
+   
