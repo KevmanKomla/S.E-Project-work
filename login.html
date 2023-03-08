@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./signUp.css">
+        <style>
+            .form{
+                width: 230px;
+                height: 280px;
+   
+            }
+       </style>
+    </head>
+    <body>
+        <div class="form">
+            <div class="title">
+              <center><p>Login form</p></center>
+            </div> 
+           <form action="login.php" method="post">
+              <input type="text" name="FirstName" placeholder="Name">
+              <div class="password-field"><br>
+                <input type="password" name="password" placeholder="Password" id="password">
+               <center> <button type="button" id="show-hide-btn" onclick="togglePassword()">Show</button></center>
+              </div>
+              <input type="submit" value="Login" name="login_button" >
+              <center>  <p>Don't have an account? <a href="signup.html">Sign up</a></p></center>
+            </form>
+        </div>
+        
+        <script>
+            function togglePassword() {
+                var passwordField = document.getElementById("password");
+                var showHideBtn = document.getElementById("show-hide-btn");
+                
+                if (passwordField.type === "password") {
+                    passwordField.type = "text";
+                    showHideBtn.innerHTML = "Hide";
+                } else {
+                    passwordField.type = "password";
+                    showHideBtn.innerHTML = "Show";
+                }
+            }
+        </script>
+    </body>
+</html>
